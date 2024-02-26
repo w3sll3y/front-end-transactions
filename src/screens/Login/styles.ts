@@ -19,6 +19,11 @@ export const ContainerLoginForm = styled.div`
   height: 30rem;
   background-color: #ecf0f1;
   border-radius: 15px;
+
+  @media (max-width: 768px) {
+    width: 15rem;
+    height: 20rem;
+  }
 `;
 
 export const FormLogin = styled.form`
@@ -33,6 +38,9 @@ export const TitleLogin = styled.text`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #2c3e50;
   font-size: 28px;
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 export const InputBox = styled.input`

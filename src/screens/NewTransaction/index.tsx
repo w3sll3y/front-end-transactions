@@ -20,7 +20,7 @@ export function NewTransaction() {
   const [selectedOption, setSelectedOption] = useState('');
   const createdAt: Date = new Date();
 
-  const notify = () => toast.success("Transacao realizada com sucesso");
+  const notify = () => toast.success("Transação realizada com sucesso");
   const notifyErr = (err) => toast.error(err);
 
   const { user } = useAuth();
@@ -72,7 +72,7 @@ export function NewTransaction() {
       return notifyErr('Preencha o cvv')
     }
     if (valueTransaction === '') {
-      return notifyErr('Preencha o valor da transacao')
+      return notifyErr('Preencha o valor da transação')
     }
 
     const dataFormatada: string = formatarDataParaEnvio(createdAt);
@@ -101,7 +101,7 @@ export function NewTransaction() {
       <Header />
       <Styled.Container>
         <Styled.Title>
-          Nova transacao
+          Nova transação
         </Styled.Title>
         <Styled.ContainerTransaction>
           <Styled.SectionInput>

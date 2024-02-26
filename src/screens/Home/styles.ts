@@ -12,10 +12,17 @@ export const Container = styled.div`
 export const Title = styled.text`
   font-weight: bold;
   font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-top: 50px;
+  }
 `;
 
 export const EmptyTransactions = styled.div``;
 
 export const ListTransactions = styled.div`
-  margin-top: 25px
+  margin-top: 25px;
+  @media (max-width: 768px) {
+    max-width: 25rem;
+  }
 `;

@@ -28,7 +28,7 @@ export function Header() {
       </Styled.MenuTextContainer>
       <Styled.MenuItems>
         <NavLink to="/home">Inicio</NavLink>
-        <NavLink to="/new-transaction">Nova transacao</NavLink>
+        <NavLink to="/new-transaction">Nova transação</NavLink>
       </Styled.MenuItems>
       <Styled.ButtonLoggoutContainer>
         <Styled.ButtonLoggout onClick={handleLoggout}>

@@ -43,7 +43,7 @@ export function Home() {
       {data?.length > 0 ? (
         <>
           <Styled.Title>
-            Minhas Transacoes
+            Minhas Transações
           </Styled.Title>
           <Styled.ListTransactions>
 
@@ -77,7 +77,7 @@ export function Home() {
       ) : (
         <Styled.EmptyTransactions>
           <Styled.Title>
-            Voce ainda nao possui transacoes
+            Voce ainda nao possui transações
           </Styled.Title>
         </Styled.EmptyTransactions>
       )}

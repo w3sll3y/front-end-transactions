@@ -21,11 +21,20 @@ export const ContainerTransaction = styled.section`
   margin-top: 25px;
   border-radius: 15px;
   display: flex;
+
+  @media (max-width: 768px) {
+    max-width: 22rem;
+    height: 300px;
+  }
 `;
 
 export const Title = styled.text`
   font-weight: bold;
   font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-top: -50px;
+  }
 `;
 
 export const InputBox = styled.input`
@@ -54,6 +63,9 @@ export const InputBoxNumberCard = styled(InputMask)`
   max-width: 60%;
   padding: 10px;
   border-radius: 5px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const InputBoxNumber = styled(InputMask)`
@@ -68,6 +80,9 @@ export const InputBoxNumber = styled(InputMask)`
   max-width: 15%;
   padding: 10px;
   border-radius: 5px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const LabelInput = styled.label`
@@ -75,6 +90,9 @@ export const LabelInput = styled.label`
   min-width: 80px;
   margin-right: 10px;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const SectionInput = styled.div`
@@ -86,6 +104,10 @@ export const SectionInputDate = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
