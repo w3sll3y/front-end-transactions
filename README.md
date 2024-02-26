@@ -5,8 +5,8 @@ To install all dependences
 ```
 npm install
 ```
-## Running the server
-To run server, execute this code
+## Running the app
+To run application, execute this code
 ```
 npm run dev
 ```
