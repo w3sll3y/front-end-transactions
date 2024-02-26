@@ -92,7 +92,7 @@ export function NewTransaction() {
         handleGoHome()
       }, 1000)
     } catch (err) {
-      console.log(err);
+      notifyErr("Erro ao realizar transação. Tente novamente.");
     }
   };
 

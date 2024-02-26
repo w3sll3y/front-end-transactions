@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -15,6 +16,7 @@ import axios from "axios";
 import useAuth from "../../hooks/useAuth";
 
 export function Home() {
+  const notifyErr = (err) => toast.error(err);
   const { user } = useAuth();
   const [data, setData] = useState();
   const token = localStorage.getItem('token');
@@ -31,7 +33,7 @@ export function Home() {
       );
       setData(response?.data);
     } catch (err) {
-      console.log(err)
+      notifyErr("Erro buscar transações. Tente novamente.");
     }
   }
   useEffect(() => {
@@ -81,6 +83,18 @@ export function Home() {
           </Styled.Title>
         </Styled.EmptyTransactions>
       )}
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </Styled.Container>
   )
 }
